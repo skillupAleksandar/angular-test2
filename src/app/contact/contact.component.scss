@@ -1,0 +1,66 @@
+body {
+  background-color: gray;
+  margin: 0;
+}
+
+a[href="contact.html"] {
+  text-decoration: underline;
+}
+
+.main-container {
+  position: relative;
+  background-color: gray;
+  top: 100px;
+  width: 100%;
+  height: calc(100vh - 200px);
+}
+
+.contact-details {
+  position: relative;
+  top: 0;
+  right: 48px;
+  float: right;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contact-details a {
+  color: white;
+}
+
+form {
+  float: left;
+  width: 50%;
+  color: white;
+  font-weight: bold;
+  left: 24px;
+  position: relative;
+}
+
+form > input:not([type="submit"]), form > textarea {
+  width: 100%;
+}
+
+form > input, form > textarea {
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+form > textarea {
+  height: 200px;
+}
+
+form > input {
+  height: 25px;
+}
+
+input[type="submit"] {
+  background-color: #0069d9;
+  color: white;
+  font-weight: bold;
+  height: 45px;
+  width: 100px;
+}

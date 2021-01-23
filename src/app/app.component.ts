@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-test2';
+  text: string = '';
+
+  addArticle() {
+    this.text = 'Nekoja vrednost';
+  }
 }

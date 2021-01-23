@@ -1,0 +1,49 @@
+<div class="main-container">
+  <div class="contact-details">
+    <h2>Contact Details</h2>
+    <div>Aleksandar Chochkov</div>
+    <div>Dimko Najdov 62</div>
+    <div>1400 Veles, Macedonia</div>
+    <p>P: +389 (0)71 213 563</p>
+    <p>E: <a href="mailto: alexcockov@gmail.com">alexcockov@gmail.com</a></p>
+  </div>
+
+<!--  <h2>Send me a message</h2>-->
+<!--  <label for="name">Full Name:</label><br>-->
+<!--  <input [(ngModel)]="name" type="text" id="name" name="name" placeholder="John"><br>-->
+<!--  <label for="phone">Phone Number:</label><br>-->
+<!--  <input [(ngModel)]="phone" type="text" id="phone" name="phone" placeholder="Doe"><br>-->
+<!--  <label for="email">Email Address:</label><br>-->
+<!--  <input [(ngModel)]="email" type="text" id="email" name="email" placeholder="email@example.com"><br>-->
+<!--  <label for="message">Message:</label><br>-->
+<!--  <textarea [(ngModel)]="message" id="message" name="message"></textarea><br>-->
+<!--  <button (click)="onSubmit()"-->
+<!--          [disabled]="name.length === 0 || phone.length === 0 || email.length === 0 || message.length === 0">Submit-->
+<!--  </button>-->
+
+  <form [formGroup]="contactForm">
+  <h2>Send me a message</h2>
+  <label for="name">Full Name:</label><br>
+  <input formControlName="name" [(ngModel)]="name1" type="text" id="name" name="name" placeholder="John"><br>
+  <label for="phone">Phone Number:</label><br>
+  <input formControlName="phone" type="text" id="phone" name="phone" placeholder="Doe"><br>
+  <label for="email">Email Address:</label><br>
+  <input formControlName="email" type="text" id="email" name="email" placeholder="email@example.com"><br>
+<!--    <div *ngIf="contactForm.controls.email.errors?.email">Please enter a valid email address</div>-->
+  <label for="message">Message:</label><br>
+  <textarea formControlName="message" id="message" name="message"></textarea><br>
+  <button (click)="onSubmit()">Submit</button>
+  </form>
+
+<!--  <div *ngIf="contactForm.invalid">The form is invalid</div>-->
+<!--  <div *ngIf="contactForm.valid">The form is valid</div>-->
+
+<!--  <div [ngSwitch]="contactForm.valid">-->
+<!--    <div *ngSwitchCase="false">The form is invalid</div>-->
+<!--    <div *ngSwitchCase="true">The form is valid</div>-->
+<!--    <div *ngSwitchDefault>The form is unknown</div>-->
+<!--  </div>-->
+
+  <button (click)="toggleForm()">Toogle Form Disabled</button>
+
+</div>

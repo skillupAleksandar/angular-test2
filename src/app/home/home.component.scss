@@ -1,0 +1,43 @@
+body {
+  background-color: gray;
+  margin: 0;
+}
+
+a[href="index.html"] {
+  text-decoration: underline;
+}
+
+.main-container {
+  background-image: url('../../assets/images/aleksandar.jpg');
+  position: relative;
+  top: 100px;
+  height: calc(100vh - 200px);
+  background-size: cover;
+  max-width: 1250px;
+  background-position-x: center;
+  margin: 0 auto;
+}
+
+.main-message-container {
+  position: relative;
+  top: 25px;
+  background-color: rgba(0,0,0,0.3);
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid white;
+  padding: 24px;
+}
+
+.main-message, .main-description {
+  margin: 0;
+  text-align: center;
+  color: rgba(255,255,255, 0.9);
+}
+
+.main-message {
+  font-size: 40px;
+}
+
+.main-description {
+  font-size: 24px;
+}
