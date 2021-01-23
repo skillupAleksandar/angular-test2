@@ -3,26 +3,13 @@
     <h1>Skills</h1>
   </div>
   <div class="cards-container">
-    <div class="card">
+    <div class="card" *ngFor="let skill of skills; let i = index; let last = last">
       <div class="card-content">
-        <div class="card-header">HTML</div>
+        <div class="card-header">{{i+1 + ' ' + skill.name}}</div>
         <div class="card-image"><img src="assets/images/html.png"/></div>
-        <button class="card-button">Learn More</button>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="card-header">CSS</div>
-        <div class="card-image"><img src="assets/images/css.png"/></div>
-        <button class="card-button">Learn More</button>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-content">
-        <div class="card-header">Angular</div>
-        <div class="card-image"><img src="assets/images/angular.png"/></div>
-        <button class="card-button">TBD</button>
+        <button class="card-button" *ngIf="!last">Learn More</button>
       </div>
     </div>
   </div>
 </div>
+
