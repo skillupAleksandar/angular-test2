@@ -23,7 +23,7 @@ export class SkillsComponent implements OnInit {
   ]
 
 
-  niza = ['Aleksandar Ch', 'Aleksandar M', 'Davcev', 'Ivana', 'Kate', 'Kristijan', 'Martin', 'Vlatko']
+  niza = ['Aleksandar ChASD', 'Aleksandar M', 'Davcev', 'Ivana', 'Kate', 'Kristijan', 'Martin', 'Vlatko']
 
   constructor() { }
 
