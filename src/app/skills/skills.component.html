@@ -6,7 +6,7 @@
     <div class="card" *ngFor="let skill of skills; let i = index; let last = last">
       <div class="card-content">
         <div class="card-header">{{i+1 + ' ' + skill.name}}</div>
-        <div class="card-image"><img src="assets/images/html.png"/></div>
+        <div class="card-image"><img [src]="skill.imageSrc"/></div>
         <button class="card-button" *ngIf="!last">Learn More</button>
       </div>
     </div>
