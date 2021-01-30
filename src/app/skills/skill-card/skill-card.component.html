@@ -1,0 +1,7 @@
+<div class="card">
+  <div class="card-content">
+    <div class="card-header">{{index+1 + ' ' + skill.name}}</div>
+    <div class="card-image"><img [src]="skill.imageSrc"/></div>
+    <button class="card-button" *ngIf="!last" (click)="onButtonClicked.emit(skill.name)">Learn More</button>
+  </div>
+</div>

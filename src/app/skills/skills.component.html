@@ -3,13 +3,8 @@
     <h1>Skills</h1>
   </div>
   <div class="cards-container">
-    <div class="card" *ngFor="let skill of skills; let i = index; let last = last">
-      <div class="card-content">
-        <div class="card-header">{{i+1 + ' ' + skill.name}}</div>
-        <div class="card-image"><img [src]="skill.imageSrc"/></div>
-        <button class="card-button" *ngIf="!last">Learn More</button>
-      </div>
-    </div>
+    <app-skill-card *ngFor="let skill of skills; let i = index; let last = last" [index]="i" [skill]="skill"
+                    [last]="last" (onButtonClicked)="onButtonClicked($event)"></app-skill-card>
   </div>
 </div>
 <div>ASDA</div>

@@ -12,6 +12,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { NovaComponentaComponent } from './nova-componenta/nova-componenta.component';
 import { InfoBoxComponent } from './about/info-box/info-box.component';
+import { SkillCardComponent } from './skills/skill-card/skill-card.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { InfoBoxComponent } from './about/info-box/info-box.component';
     ContactComponent,
     NovaComponentaComponent,
     InfoBoxComponent,
+    SkillCardComponent,
   ],
     imports: [
         BrowserModule,

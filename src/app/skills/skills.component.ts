@@ -30,4 +30,8 @@ export class SkillsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onButtonClicked(info: string) {
+    alert(info + ' clicked');
+  }
+
 }
